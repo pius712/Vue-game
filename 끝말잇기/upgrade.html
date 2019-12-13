@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <word-relay></word-relay>
+        <word-relay></word-relay>
+        <word-relay></word-relay>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        Vue.component('word-relay',{
+            template: `
+            <div>
+                <div v-for ="chat in chats">{{ chat }}</div>
+                <form v-on:submit="onSubmit">
+                    <input type="text" v-model="value">
+                    <button type="sumbmit">누르시오</button>
+                </form>
+                <div>{{ result }}</div>
+            </div>
+            `,
+            data(){
+                return {
+                    chats: ['인적성'],
+                    value: '',
+                    result: ''
+                
+                }
+            },
+            methods:{
+                onSubmit(e){
+                    e.preventDefault();
+                    var chat = this.chats[this.chats.length-1];
+                    console.log(chat);
+                    console.log(chat[chat.length-1], this.value[0])
+                    if(chat[chat.length-1] === this.value[0]){
+                        this.result = 'correct';
+                        // console.log("correct");
+                        this.chats.push(this.value);
+                        this.value ='';
+                    }else{
+                        this.result = 'incorret'
+                        console.log("incorrect")
+                    }
+                }
+            }
+        })
+        // var temp = {
+        //     template: `
+        //     <div v-for ="chat in chats">{{ chat }}</div>
+        //         <form v-on:submit="onSubmit">
+        //             <input type="text" v-model="value">
+        //             <button type="sumbmit">누르시오</button>
+        //         </form>
+        //     <div>{{ result }}</div>
+        //     `
+        // }
+        new Vue({
+            el: "#app",
+            data:{
+                },
+            methods:{
+                }
+            },
+            // components :{
+            //     'temp-content' : temp,
+            // }
+        )
+    </script>
+</body>
+</html>
