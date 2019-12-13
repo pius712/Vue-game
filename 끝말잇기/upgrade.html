@@ -25,9 +25,10 @@
                 <div>{{ result }}</div>
             </div>
             `,
+            props: ['startWord'],
             data(){
                 return {
-                    chats: ['인적성'],
+                    chats: [this.startWord],
                     value: '',
                     result: ''
                 
