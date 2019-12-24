@@ -1,0 +1,21 @@
+{
+  "name": "googoodan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vue-loader": "^15.8.3",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
