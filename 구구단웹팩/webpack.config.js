@@ -11,7 +11,7 @@ module.exports = {
     },
     module:{
         rules : [{
-            test: /\.vue$/,
+            test: /\.vue$/, 
             loader: 'vue-loader' // npm i vue-loader -D   .vue 파일은 이제 vue-loader가 처리한다. 
         }],
     },
