@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
       <GooDan></GooDan>
   </div>
 </template>
