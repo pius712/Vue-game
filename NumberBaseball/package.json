@@ -11,12 +11,27 @@
   "license": "ISC",
   "dependencies": {
     "vue": "^2.6.11"
-    
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
     "vue-loader": "^15.8.3",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10",
-    "vue-template-compiler": "^2.6.11"
+    "webpack-cli": "^3.3.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
   }
 }

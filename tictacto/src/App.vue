@@ -7,9 +7,11 @@
 <script>
 import TableComponent from './components/TableComponent.vue';
 import { mapState } from 'vuex';
+// import store from './store/store.js'
 
 export default {
-  name: 'app',    
+  name: 'app',  
+  // store: store,  
   computed:{
     ...mapState(['tableData', 'winner','turn']),
     // tableData(){

@@ -11,8 +11,8 @@
 </template>
 
 <script>
-let startTime = 0;
-let endTime = 0;
+// let startTime = 0;
+// let endTime = 0;
 let timeout = null;
 export default {
     data(){

@@ -1,41 +1,25 @@
 {
-  "name": "responsegame",
+  "name": "rockpaper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch",
+    "build": "webpack",
     "dev": "webpack-dev-server --hot"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "vue": "^2.6.11"
-  },
   "devDependencies": {
     "css-loader": "^3.4.1",
-    "eslint": "^6.8.0",
-    "eslint-loader": "^3.0.3",
     "vue-loader": "^15.8.3",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
-  },  
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
   }
 }
